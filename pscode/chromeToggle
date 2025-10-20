@@ -1,0 +1,5 @@
+if(-not (Get-Process -Name "chrome")) {
+  Start-Process "chrome.exe" "https://www.champlain.edu"
+} else {
+  Stop-Process -Name "chrome"
+}
