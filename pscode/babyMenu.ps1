@@ -66,9 +66,10 @@ do {
         showAtRisk
     } elseif($choice -eq "4") {
         toggleChrome
-    } else {
+    } elseif(-not ($choice -eq "5")) {
         Write-Host "Invalid Input."
     }
   
 } until ($choice -eq "5")
+
 
