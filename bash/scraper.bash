@@ -21,7 +21,7 @@ for ((i=0; i<${#T[@]}; i+=2)); do
 
 	temp="${T[$i]}"
 	dt="${T[$i+1]}"
-	press="${P[$1]}"
+	press="${P[$i]}"
 
 	echo "$press $temp $dt"
 done
